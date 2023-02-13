@@ -1,0 +1,60 @@
+.container{
+    margin: 0 auto;
+    font-family: 'Khula', sans-serif;
+}
+
+.content__block{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.content__header{
+    font-family: 'Khula', sans-serif;
+    margin: 0;
+}
+
+.input__block{
+    margin: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.input_1{
+    height: 30px;
+    border-radius: 3px;
+    border-width:  2px;
+    border-color: gray;
+    border-image: none;
+}
+
+.button{
+    height: 30px;
+    border-radius: 3px;
+    transition: 0.3s;
+    font-family: 'Khula', sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: #186E8B;
+}
+
+.button:hover{
+    transition: 0.3s;
+    color: black;
+    background-color: white;
+}
+
+.result__container{
+    padding: 10px;
+    margin: 10px;
+}
+
+.div{
+    font-family: 'Khula', sans-serif;
+
+}
