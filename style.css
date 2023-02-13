@@ -15,6 +15,11 @@
     margin: 0;
 }
 
+.p{
+    margin: 0;
+    font-family: 'Khula', sans-serif;
+}
+
 .input__block{
     margin: 10px;
     padding-left: 10px;
