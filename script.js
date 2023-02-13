@@ -2,6 +2,15 @@ function onClick() {
   let intArray = Array.from(document.getElementById("array_input").value.split(",").map(Number));
   console.log(intArray);
 
+  function clearResults() {
+    let resultBlock = document.getElementById("result_block");
+    resultBlock.innerHTML = "";
+    let iterations = document.getElementsByClassName("iteration");
+    while (iterations.length > 0) {
+      iterations[0].parentNode.removeChild(iterations[0]);
+    }
+  }
+
   function SelectionSort(intArray) {
     let n = intArray.length;
     for (let i = 0; i < n; i++) {
@@ -13,6 +22,7 @@ function onClick() {
       }
 
       let div = document.createElement("div");
+      div.classList.add("iteration");
       div.style.backgroundColor = "#186E8B";
       div.style.padding = "10px";
       div.style.margin = "10px";
@@ -37,6 +47,7 @@ function onClick() {
     }
   }
 
+  clearResults();
   SelectionSort(intArray);
   let output = document.getElementById("result_block");
   output.innerHTML = "Result: " + intArray;
