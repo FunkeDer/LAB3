@@ -1,6 +1,10 @@
 function onClick() {
-  let intArray = Array.from(document.getElementById("array_input").value.split(",").map(Number));
+  let intArray = Array.from(document.getElementById("array_input").value.split(",").filter(Check).map(Number));
   console.log(intArray);
+
+  function Check (element){
+    return element.length>0;
+  }
 
   function clearResults() {
     let resultBlock = document.getElementById("result_block");
